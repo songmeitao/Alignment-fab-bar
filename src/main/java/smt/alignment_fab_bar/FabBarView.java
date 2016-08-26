@@ -104,6 +104,7 @@ public class FabBarView extends View {
         mWPaint.setStyle(Paint.Style.FILL);
         mWPaint.setStrokeWidth(17);
         mWPaint.setColor(mIconColor);
+        mWPaint.setStrokeCap(Paint.Cap.ROUND);
 
 
     }
@@ -144,10 +145,10 @@ public class FabBarView extends View {
 
         canvas.drawCircle(mXCenter, mYCenter, mRadius, mBluePaint);
 
-        canvas.drawCircle(x1, y1, mWradio, mWPaint);
-        canvas.drawCircle(x3, y3, mWradio, mWPaint);
-        canvas.drawCircle(x2, y2, mWradio, mWPaint);
-        canvas.drawCircle(x4, y4, mWradio, mWPaint);
+       // canvas.drawCircle(x1, y1, mWradio, mWPaint);
+       // canvas.drawCircle(x3, y3, mWradio, mWPaint);
+       // canvas.drawCircle(x2, y2, mWradio, mWPaint);
+       // canvas.drawCircle(x4, y4, mWradio, mWPaint);
         canvas.drawLine(x1, y1, x3, y3, mWPaint);
         canvas.drawLine(x2, y2, x4, y4, mWPaint);
 
